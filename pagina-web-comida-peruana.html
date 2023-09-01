@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurante Peruano</title>
+  <style>
+    /* Estilos CSS para la página web */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #F44336;
+      color: #FFF;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      color: #FFF;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #FFF;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .menu-button {
+      display: inline-block;
+      background-color: #F44336;
+      color: #FFF;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .menu-button:hover {
+      background-color: #D32F2F;
+    }
+
+    .menu-section {
+      display: none;
+    }
+
+    .menu-section.active {
+      display: block;
+    }
+  </style>
+  <script>
+    // Función para cambiar de sección al hacer clic en un botón del menú
+    function changeSection(sectionId) {
+      var sections = document.getElementsByClassName('menu-section');
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].classList.remove('active');
+      }
+      document.getElementById(sectionId).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Restaurante Peruano</h1>
+  </header>
+  <nav>
+    <button class="menu-button" onclick="changeSection('ceviche')">Ceviche</button>
+    <button class="menu-button" onclick="changeSection('lomo_saltado')">Lomo Saltado</button>
+    <button class="menu-button" onclick="changeSection('aji_de_gallina')">Aji de Gallina</button>
+    <button class="menu-button" onclick="changeSection('causa')">Causa Limeña</button>
+  </nav>
+  <section id="ceviche" class="menu-section active">
+    <h2>Ceviche</h2>
+    <img src="https://i.pinimg.com/originals/3b/c2/3e/3bc23e3a4b84c726ec14c160880333a2.jpg" alt="Ceviche">
+    <!-- Descripción y detalles del ceviche -->
+  </section>
+  <section id="lomo_saltado" class="menu-section">
+    <h2>Lomo Saltado</h2>
+    <img src="https://i.pinimg.com/originals/64/5b/f9/645bf98e1f5f5e2c6b7545ea9e4c7305.jpg" alt="Lomo Saltado">
+    <!-- Descripción y detalles del lomo saltado -->
+  </section>
+  <section id="aji_de_gallina" class="menu-section">
+    <h2>Aji de Gallina</h2>
+    <img src="https://i.pinimg.com/originals/ae/40/f3/ae40f3631ab6a3fd2c44858692713b4a.jpg" alt="Aji de Gallina">
+    <!-- Descripción y detalles del aji de gallina -->
+  </section>
+  <section id="causa" class="menu-section">
+    <h2>Causa Limeña</h2>
+    <img src="https://i.pinimg.com/originals/48/9d/2c/489d2c0e609e457a28a7bdaeeb0a42c7.jpg" alt="Causa Limeña">
+    <!-- Descripción y detalles de la causa limeña -->
+  </section>
+</body>
+</html>
