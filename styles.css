@@ -1,0 +1,158 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c52727;
+  line-height: 1.6;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+header {
+  background-image: url("machupichu.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 50px 0;
+}
+
+header h1 {
+  font-size: 36px;
+  color: rgb(186, 42, 42);
+  text-shadow: 2px 2px 4px rgba(25, 6, 240, 0.5);
+}
+
+
+nav ul {
+  list-style-type: none;
+  background-color: #a53f3f;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: white;
+  margin-top: 20px;
+  text-align: center; 
+}
+
+
+.plato {
+  margin-bottom: 20px;
+}
+
+.plato img {
+  max-width: 200px;
+  height: auto;
+}
+
+
+.menu-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
+}
+
+.menu-item {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.menu-item img.menu-imagen {
+  width: 300px; 
+  height: 200px; 
+}
+
+.menu-item h3 {
+  margin-top: 10px; 
+}
+
+.menu-item p {
+  margin-top: 10px; 
+}
+
+
+
+
+.reservation-form,
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: left; 
+}
+
+.reservation-form label,
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="tel"],
+.reservation-form input[type="date"],
+.reservation-form input[type="time"],
+.reservation-form input[type="number"],
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.reservation-form button[type="submit"],
+.contact-form button[type="submit"] {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.reservation-form button[type="submit"]:hover,
+.contact-form button[type="submit"]:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}

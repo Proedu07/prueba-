@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>La Cuzqueñita</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<header>
+    <img src="machupichu.jpg" alt="Machu Picchu">
+    <h1>Restaurante Peruano "LA CUZQUEÑITA"</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#section1">Inicio</a></li>
+        <li><a href="#section2">Platos</a></li>
+        <li><a href="#section3">Menú</a></li>
+        <li><a href="#section4">Reservas</a></li>
+        <li><a href="#section5">Contacto</a></li>
+    </ul>
+</nav>
+
+<section class="section" id="section1">
+    <h2>¡Bienvenidos a "La Cuzqueñita"!</h2>
+    <p>La Cuzqueñita es un encantador restaurante peruano que ofrece una experiencia culinaria auténtica y sabrosa. Con su ambiente acogedor y decoración inspirada en la cultura peruana, te sumergirás en un pedacito de Perú desde el momento en que entras. El menú presenta una amplia selección de platos clásicos peruanos, desde ceviche fresco hasta lomo saltado lleno de sabor. Los ingredientes de alta calidad y las técnicas de cocina tradicionales se combinan para brindarte una verdadera explosión de sabores. Si estás buscando explorar la rica cocina peruana en un ambiente acogedor, La Cuzqueñita es definitivamente un lugar que vale la pena visitar.</p>
+</section>
+
+<section class="section" id="section2">
+  <h2>Nuestros Platos Destacados</h2>
+  <ul class="menu-imagenes">
+      <li class="menu-item">
+          <img src="ceviche.jpg" alt="Ceviche Peruano" class="menu-imagen">
+          <h3>Ceviche Peruano</h3>
+          <p>El ceviche peruano es una deliciosa combinación de pescado fresco y cítricos.</p>
+      </li>
+      <li class="menu-item">
+          <img src="causa.jpg" alt="Causa Limeña" class="menu-imagen">
+          <h3>Causa Limeña</h3>
+          <p>La causa limeña es un plato de papas amarillas rellenas de atún o pollo, aliñadas con ají amarillo y limón.</p>
+      </li>
+      <li class="menu-item">
+          <img src="aji-de-gallina.jpg" alt="Aji de Gallina" class="menu-imagen">
+          <h3>Aji de Gallina</h3>
+          <p>El ají de gallina es un plato peruano hecho a base de gallina desmenuzada en una crema de ají amarillo y nueces.</p>
+      </li>
+  </ul>
+</section>
+
+
+<section class="section" id="section3">
+    <h2>Menú del día</h2>
+    <ul class="menu-imagenes">
+        <li class="menu-item">
+            <img src="seco-de-pollo.jpg" alt="Seco de Pollo" class="menu-imagen">
+            <h3>Seco de Pollo</h3>
+        </li>
+        <li class="menu-item">
+            <img src="pollo-broaster.jpg" alt="Pollo Broaster" class="menu-imagen">
+            <h3>Pollo Broaster</h3>
+        </li>
+        <li class="menu-item">
+            <img src="arroz-con-pollo.jpg" alt="Arroz con Pollo" class="menu-imagen">
+            <h3>Arroz con Pollo</h3>
+        </li>
+        <li class="menu-item">
+            <img src="caldo-de-gallina.jpg" alt="Caldo de Gallina" class="menu-imagen">
+            <h3>Caldo de Gallina</h3>
+        </li>
+        <li class="menu-item">
+            <img src="arroz-chaufa.jpg" alt="Arroz Chaufa" class="menu-imagen">
+            <h3>Arroz Chaufa</h3>
+        </li>
+        <li class="menu-item">
+            <img src="tacu-tacu.jpg" alt="Tacu Tacu" class="menu-imagen">
+            <h3>Tacu Tacu</h3>
+        </li>
+    </ul>
+</section>
+
+<section class="section" id="section4">
+    <h2>Reservas</h2>
+    <p>Para realizar una reserva en nuestro restaurante, por favor complete el siguiente formulario:</p>
+    <form class="reservation-form" action="procesar_reserva.php" method="post">
+        <label for="nombre">Nombre y Apellido</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="telefono">Celular</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="hora">Hora</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <label for="personas">Número de Personas</label>
+        <input type="number" id="personas" name="personas" required>
+
+        <button type="submit">Enviar Reserva</button>
+    </form>
+</section>
+
+<section class="section" id="section5">
+    <h2>Contacto</h2>
+    <div class="contact-info">
+        <div class="contact-details">
+            <h3>Información de Contacto</h3>
+            <p>Dirección: Jr La Mar 248, Lima, Perú</p>
+            <p>Teléfono: +51 537 6703</p>
+            <p>Correo Electrónico: info@lacuzqueñita.com</p>
+            <p>Horario de Atención: Lunes a Sábado, 12:00 PM - 10:00 PM</p>
+            <p>DOMINGOS Y FERIADOS CERRADO</p>
+        </div>
+        <div class="contact-form">
+            <h3>Envíanos un Mensaje</h3>
+            <form action="procesar_mensaje.php" method="post">
+                <label for="nombre1">Nombre:</label>
+                <input type="text" id="nombre1" name="nombre1" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Derechos de autor © 2023 - Restaurante "La Cuzqueñita"</p>
+</footer>
+
+</body>
+</html>
+
